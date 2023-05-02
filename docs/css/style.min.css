@@ -1,0 +1,160 @@
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+	margin: 0;
+}
+
+ul[class] {
+	list-style-type: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1348px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.title {
+	font-family: "Azeret Mono", monospace;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.menu {
+	background: #e9e9e3;
+	padding: 200px 0;
+	color: #6f6f64;
+}
+.menu__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	gap: 0 20px;
+}
+.menu__title {
+	padding-bottom: 17px;
+	line-height: 22px;
+}
+.menu__text {
+	max-width: 560px;
+	width: 100%;
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 45px;
+	padding-bottom: 74px;
+}
+.menu__button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	max-width: 530px;
+	width: 100%;
+	padding: 17px 30px;
+	cursor: pointer;
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #6f6f64;
+	border: 1px solid #6f6f64;
+	background-color: transparent;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.menu__button.menu__button--active {
+	background-color: #6f6f64;
+	color: #fff;
+}
+.menu__button:hover {
+	background-color: #6f6f64;
+	color: #fff;
+}
+.menu__button + .menu__button {
+	margin-top: 12px;
+}
+.menu__content {
+	max-width: 664px;
+	width: 100%;
+}
+.menu__content.food-menu .menu__img:nth-child(1) {
+	display: block;
+}
+.menu__content.drinks-menu .menu__img:nth-child(2) {
+	display: block;
+}
+.menu__content.takeaway-menu .menu__img:nth-child(3) {
+	display: block;
+}
+.menu__img {
+	width: 100%;
+	min-height: 1037px;
+	display: none;
+}
